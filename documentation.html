@@ -1,0 +1,233 @@
+<html>
+  <head>
+      <link href="E:\html_and_css_project\doc_style.css" rel="stylesheet"type="text/css"></link>
+    <title>Python documentation</title>
+  </head>
+  <body>
+    <nav>
+      <header id="navheader"> Python documentation</header>   
+    <ul>  
+    <div id="pos">            
+       <li><a href="#introduction">Introduction</a><li><hr>        
+       <li><a href="#sconstant">String Constants</a><li><hr>
+       <li><a href="#list">List Data</a><li><hr> 
+       <li><a href="#tubles">Tubles Object</a><li><hr> 
+       <li><a href="#assignments">Assignments</a><li><hr>
+       <li><a href="#ifs">if Statment</a><li> <hr>
+       <li><a href="for">for loops</a><li><hr>
+       <li><a href="#while">while loops</a><li><hr>
+       <li><a href="#func">Functions</a><li><hr>
+       <li><a href="#excep">Exceptions</a><li><hr>
+    </div> 
+    </ul>            
+    </nav>
+    <main>
+    <section>
+      <header id="introduction">INTRODUCTION</header>
+      <article>
+      
+        <p>Python is a high-level scripting language which can be used for a wide variety
+of text processing, system administration and internet-related tasks. Unlike
+many similar languages, it’s core language is very small and easy to master, while allowing the addition of modules to perform a virtually limitless
+variety of tasks. Python is a true object-oriented language, and is available
+on a wide variety of platforms. There’s even a python interpreter written
+entirely in Java, further enhancing python’s position as an excellent solution
+for internet-based problems.
+</p>
+      </article>
+      </section>
+      <section>
+      <br>
+      <header id="sconstant">STRING CONSTANTS</header>
+      <article>
+        <p>Strings are a collection of characters which are stored together to represent
+arbitrary text inside a python program. You can create a  string constant   
+inside a python program by surrounding text with either single quotes (’),
+double quotes ("), or a collection of three of either types of quotes (’’’ or
+"""). In the first two cases, the opening and closing quotes must appear on
+the same line in your program; when you use triple quotes, your text can
+span as many lines as you like. The choice of which quote symbol to use is
+up to you – both single and double quotes have the same meaning in python.
+Here are a few examples of how to create a string constant and assign its
+value to a variable:
+        </p>
+        <div class="box1">
+        <code >
+          name = ’Phil’<br>
+value = "$7.00"<br>
+helptext = """You can create long strings of text<br>
+spanning several lines by using triple quotes at<br>
+the beginning and end of the text"""<br>
+        </code>
+        </div>
+      </article>
+        </section>
+      <section>
+      <br>
+        <header id="list">LIST DATA</header>
+      <article>  
+      <p>Lists provide a general mechanism for storing a collection of objects indexed
+by a number in python. The elements of the list are arbitrary — they can be
+numbers, strings, functions, user-defined objects or even other lists, making
+complex data structures very simple to express in python. You can input a
+list to the python interpreter by surrounding a comma separated list of the
+objects you want in the list with square brackets ([ ]) Thus, a simple list of
+numbers can be created as follows:</p>
+        <div class="box1">
+          <code>>>> mylist = [1,7,9, 13, 22, 31]</code>
+        </div>
+      </article>
+        </section>
+      <section>
+      <br>
+        <header id="tubles">TUBLES OBJECT</header>
+       <article> 
+      <p>Tuples are very much like lists, except for one important difference. While
+lists are mutable, tuples, like strings, are not. This means that, once a tuple
+is created, its elements can’t be modified in place. Knowing that a tuple is
+immutable, python can be more efficient in manipulating tuples than lists,
+whose contents can change at any time, so when you know you won’t need
+to change the elements within a sequence, it may be more efficient to use a
+tuple instead of a list. In addition, there are a number of situations (argument
+        passing and string formatting for example) where tuples are required.</p>
+         <div class="box1">
+           <code>
+             >>> v = (7,10,12,19,8,10,4,13,10)<br>
+>>> v.count(10)<br>
+Traceback (innermost last):<br>
+File "stdin", line 1, in ?<br>
+AttributeError: ’tuple’ object has no attribute ’count’
+           </code>
+         </div>
+      </article>
+        </section>
+      <section>
+      <br>
+      <header id="assignments">ASSIGNMENTS</header>
+      <article>
+        <p>One of the basic operations in any computer language is the assignment
+statement. The assignment statement allows us to associate a variable name
+with a value, so we can more easily manipulate our data. In python, like many
+other languages, the equal sign (=) is used to assign a value to a variable; the
+variable name is put on the left hand side of the equal sign, and the value
+(any valid python expression) is put on the right hand side  of the equal sign.
+Some simple examples of assignment statements follow:
+</p>
+        <div class="box1">
+          <code>
+            >>> x = 3<br>
+>>> y = ’This is a string’<br>
+>>> z = x + 3<br>
+>>> y = abs(-7)<br>
+>>> vegies = [’broccoli’,’peas’,’carrots’]<br>
+>>> meal = vegies
+
+          </code>
+        </div>
+      </article>
+        </section>
+      <section>
+      <br>
+      <header id="ifs">IF STATEMENT</header>
+      <article>
+        <p>The if statement, along with optional elif and/or else statements is the
+basic tool in python for performing conditional execution. The basic form of
+the statement can be summarized as:
+</p>
+        <div class="box1">
+          <code>
+           if expression :
+statement(s)<br>
+            elif expression:
+statement(s)<br>
+elif expression:
+statement(s)<br>
+. . .
+else:
+statements
+        </code>
+        </div>
+      </article>
+        </section>
+      <section>
+      <header id="for">for loops</header>
+       <article>
+         <p>The for loop allows you to iterate over all the values in a sequence (string,
+list or tuple), performing the same task on each of the elements. In addition,
+starting with version 2.0, it’s possible to iterate over other objects, such as
+file objects or dictionaries. The basic form of the for loop is:
+</p>
+         <div class="box1">
+           <code>
+             for var in sequence:<br>
+statements<br>
+else:<br>
+statements<br>
+           </code>
+         </div>
+      </article>
+        </section>
+      <section>
+      <br>
+      <header id="while">while loops</header>
+      <article>
+        <p>While the for loop provides an excellent way to process the elements of a
+sequence, there are times when it’s necessary to do some repetitive computation which is not based on an array. In those cases, the while loop can be
+used. The basic syntax of the while loop is as follows:</p>
+      <div class="box1">
+        <code>
+          while expression:
+statements
+else:
+statements
+        </code>
+        </div>
+      </article>
+        </section>
+      <br>
+      <section>
+        <header id="func">FUNCTIONS</header>
+        <article>
+          <p>The def statement is the signal to Python that you’re about to define a
+function. You follow the keyword def with the name of the function you’re
+defining, and a parenthesized list of the arguments which are to be passed
+to a function. If your function does not accept any arguments, then simply
+use an empty set of parentheses. A colon (:) follows the parenthesized list.
+The remainder of the function needs to be indented similarly to the body
+of a loop (Section 6.2). If the very next line of your function definition is a
+quoted string, it’s stored along with your function to provide documentation
+about the function; such a string is called a docstring. The function body
+follows the def line and the optional docstring. The function will return
+control to the calling environment when it encounters a return statement,
+or when it reaches the end of the indented function body, whichever comes
+first. If an expression appears after the return statement and on the same
+line, the value of that expression is returned through a call to the function.
+If no expression appears on the same line as the return statement, or the
+function does not contain a return statement, a call to such a function will
+return the value of None.
+You can access the docstring of a function by refering to the __doc__
+attribute, or by passing the name of the function to the help function when
+running python interactively. In addition, some python-aware editors will
+display the docstring as a tool tip when you move your cursor over the
+function’s name in your program</p>
+        </article>
+      </section>
+      <br>
+      <section>
+        <header id="excep">EXCEPTIONS</header>
+        <article>
+          <p>One of the basic principles of Python mentioned in Chapter 1 was the idea
+of exception handling. Unlike many languages, which leave the business
+of error handling to the programmer using the language, Python handles
+errors in a consistent way – when an error is encountered, Python prints
+a descriptive message, and terminates execution. But beyond this default
+behaviour, Python provides a simple way to trap these errors and either
+ignore them, fix them, or decide that program termination really is the best
+idea. The basic notion of the try/except clause has already been introduced;
+in this chapter we’ll discuss its use more thoroughly, as well as look at how
+to create new exceptions, and how to raise exceptions within your programs.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
