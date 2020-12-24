@@ -1,0 +1,222 @@
+body
+{
+  display:flex;
+  flex-direction:column;
+  background-color:#bbd46a;
+}
+nav
+{ 
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-end;
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:5em;
+  background-color:#bbd46a;
+  z-index:1;
+}
+.nav
+{  
+ display:flex;
+ flex-direction:row;
+ position:relative;
+}
+h3   
+{
+  font-size:30px;
+  padding-right:40px;
+}
+.a1{
+  text-decoration:none;
+  color:black;
+}
+.a1:hover
+{
+  color:#2c2d52;
+}
+.about
+{
+ position:relative;
+ top:;        
+ background-color:#78acff;
+ width:100%;
+ height:30em;
+ text-align:center;
+}
+.pic{
+   width:10em;
+   height:10em;
+   border-radius:50%;
+   position:relative;
+   top:80px;
+}
+
+#h11{
+  font-size:70px;
+  position:relative;
+  top:60px;
+  font-family:Brush Script MT, Brush Script Std, cursive;
+}
+h1{
+  font-size:70px;
+  position:relative;
+  font-family:Brush Script MT, Brush Script Std, cursive;
+}
+h2
+{
+  font-size:50px;
+  position:relative;
+  font-family:Brush Script MT, Brush Script Std, cursive;
+}
+.work
+{
+ position:relative;        
+ background-color:#8076f5;
+ width:100%;
+ height:44em;
+ text-align:center;
+}
+.flex{
+  display:flex;
+  justify-content:space-around;
+}
+.flex1{
+  display:flex;
+  justify-content:space-around;
+}
+.box
+{
+  position:relative;
+  left:20px;
+  width:20em;
+  height:13em;
+  background-color:#fce6c7;
+  border-width:5px;
+  border-style:solid;
+  border-radius:15px;
+}
+.font
+{
+  font-size:34px;
+}
+button{
+  position:relative;
+  bottom:10px;  
+  font-size:2em;
+  font-weight:bold;
+  background:#d3edeb;
+  border:5px solid;
+  border-radius:5px;
+} 
+button:hover
+{
+  position:relative;
+  bottom:15px;
+}
+.contact
+{ 
+  display:flex;
+  justify-content:center;
+  width:100%;
+  height:7em;
+  background:#6f53bd;
+  border-bottom:5px solid black;
+}
+.a{
+  text-decoration:none;
+  color:black;
+  font-size:40px;
+  padding:30px;
+ }
+.a:hover
+{
+  font-size:50px;
+}
+footer
+{ 
+  display:flex;
+  justify-content:flex-end;
+  font-size:20px;
+  height:5px;
+}
+#p1
+{
+position:relative;
+  bottom:10px;
+}
+@media(max-width:815px)
+{
+  h3{
+    font-size:25px;
+  }
+  #h11{
+    font-size:50px;
+  }
+  h2
+  {
+    font-size:30px;
+    position:relative;
+    top:20px;
+  }
+  .work
+  {
+
+    height:25em;
+  }
+  .box
+{
+  position:relative;
+  left:0px;
+  width:10em;
+  height:7em;
+  background-color:#fce6c7;
+  border-width:2px;
+  border-style:solid;
+  border-radius:10px;
+}
+  .font
+  {
+    font-size:15px;
+  }
+  
+  button{
+  position:relative;
+  bottom:px;  
+  font-size:7px;
+  font-weight:bold;
+  background:#d3edeb;
+  border:3px solid;
+  border-radius:3px;
+} 
+button:hover
+{
+  position:relative;
+    border:3px solid;
+  font-size:9px;
+}
+.butt
+  {
+    position:relative;
+    top:7px;
+  }
+ 
+  h1{font-size:50px;}
+  .a{
+    font-size:12px;
+  }
+  .a:hover
+  {
+    font-size:14px;
+  }
+  .contact{
+    height:4em;
+  }
+ footer
+  { 
+   
+    font-size:10px;
+    height:5px;
+  }
+}
